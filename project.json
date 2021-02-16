@@ -9,8 +9,8 @@
   "icon": "res/logo.png",
   "main": "main.js",
   "name": "自动学习强国",
-  "packageName": "xzy.auto-xxqg",
+  "packageName": "xzy.auto.xxqg",
   "scripts": {},
   "versionCode": 2,
-  "versionName": "2.3.0"
+  "versionName": "2.4.1"
 }
