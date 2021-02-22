@@ -1,8 +1,10 @@
 auto-xxqg
 # 最新版的 自动学习强国 
 可以帮你自动刷学习强国
+# 仅供我学习autojs使用！切勿用于违法用途，否则开发者不承担任何责任。
 
-## 官网：http://xzy.free.idcfengye.com/web/xxqg/
 ### 打包好的apk在build文件夹中，下载后即可安装
 
-## 欢迎访问xzy的网站：http://xzy.free.idcfengye.com （网站有时会显示 ...not found，这是因为服务器没有开启映射，可以联系我开启。
+# 感谢85524365指出的问题，（详见：）
+
+## 下面讲一下函数名执行的方法
