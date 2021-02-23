@@ -6,7 +6,7 @@ auto-xxqg
 ### 打包好的apk在build文件夹中，下载后即可安装
 ## 特别鸣谢：
 ### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
-### 感谢 指出的问题，详见：
+### 感谢blank-psy指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/3
 
 ## 下面讲一下函数名执行的方法
 自动学习强国从2.4.0以上版本都是采用的函数结构，有很多函数构成，这样可以更方便调试程序以及在其他函数中重复调用一个函数。
