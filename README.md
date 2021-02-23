@@ -1,10 +1,10 @@
 auto-xxqg
 # 最新版的 自动学习强国 
 可以帮你自动刷学习强国
-# 仅供我学习autojs使用！切勿用于违法用途，否则开发者不承担任何责任。
-
+## 仅供我学习autojs使用！切勿用于违法用途，否则开发者不承担任何责任。
 ### 打包好的apk在build文件夹中，下载后即可安装
-## 特别鸣谢：
+
+# 特别鸣谢：
 ### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
 ### 感谢blank-psy指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/3
 
