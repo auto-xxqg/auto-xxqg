@@ -7,6 +7,8 @@ auto-xxqg
 # 特别鸣谢：
 #### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
 #### 感谢blank-psy指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/3
+#### 感谢 晴天、翻滚的茄子 对我的支持
+#### 感谢所有资助我的，您们的资助是我前进的动力
 
 # 公告
 #### 1、看过我在码云的很旧的那个项目的都知道我是个学生党，所以在开学后可能会无暇顾及这个项目，我的开发时间主要集中在晚上，版本更新的频率和速度会相对减慢
