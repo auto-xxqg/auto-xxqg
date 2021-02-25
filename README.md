@@ -5,7 +5,7 @@ auto-xxqg
 #### 打包好的apk在build文件夹中，下载后即可安装
 
 # 拖更通知：
-#### 没错，我要拖更。作为一个年轻up主的我，拖更的习惯还是有的。在这里对赞助我的朋友们说声抱歉，由于我想做一个在线题库，所以我会在3月份买个服务器，用wanghuisenior大神的 https://github.com/wanghuisenior/xxqg_tiku 项目，所以，您们期待的v2.5.0将会推迟发布
+#### 没错，我要拖更。作为一个年轻up主的我（ https://space.bilibili.com/227711953 ），拖更的习惯还是有的。在这里对赞助我的朋友们说声抱歉，由于我想做一个在线题库，所以我会在3月份买个服务器，用wanghuisenior大神的 https://github.com/wanghuisenior/xxqg_tiku 项目，所以，您们期待的v2.5.0将会推迟发布
 
 # 特别鸣谢：
 #### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
