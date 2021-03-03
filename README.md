@@ -7,6 +7,9 @@ auto-xxqg
 # 拖更通知：
 #### 没错，我要拖更。作为一个年轻up主的我（ https://space.bilibili.com/227711953 ），拖更的习惯还是有的。在这里对赞助我的朋友们说声抱歉，由于我想做一个在线题库，所以我会在3月份买个服务器，用wanghuisenior大神的 https://github.com/wanghuisenior/xxqg_tiku 项目，所以，您们期待的v2.5.0将会推迟发布
 
+# 关于代码的自定义
+#### 由于我开学后没有大时间进行开发，在issues中有很多大神在纠正代码和优化部分代码，各位对代码不太满意的可以去看看，有时候我也会贴些代码
+
 # 特别鸣谢：
 #### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
 #### 感谢blank-psy指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/3
@@ -18,6 +21,7 @@ auto-xxqg
 #### 2、拒绝"大神""老大"等类的称呼，我真的很菜，我连LeetCode第一题都要看题解，所以求求您们别再这样称呼我！
 #### 3、官方网站： http://xzy.9gz.xyz
 #### 3、有人问我在哪捐赠，我就把图片贴这里，感谢您们的捐赠![](http://xzy.9gz.xyz/pic/fullsizerender(2).jpg)
+#### 4、我建议您下载源码执行，因为打包apk可能出现一些问题，以后我可能不再提供打包好的apk。
 
 ## 下面讲一下函数名执行的方法
 自动学习强国从2.4.0以上版本都是采用的函数结构，有很多函数构成，这样可以更方便调试程序以及在其他函数中重复调用一个函数。
