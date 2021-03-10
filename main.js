@@ -2157,9 +2157,9 @@ function zsyQuestionLoop() {
      }
    }
     oldaquestion = aquestion;
-    /*delay(0.5);*/
+    delay(0.5);
   }
-  //delay(3.5);//后置3.5延时与前置0.5构成4s延时
+  delay(3.5);//后置3.5延时与前置0.5构成4s延时
  }catch (e){
      delay(3);
    if (!className("RadioButton").exists() || className("android.view.View").text("继续挑战").exists() || textContains("继续挑战").exists() /*|| !textContains("距离答题结束").exists()*/){//不存在本局结束标志 继续挑战，则执行  
