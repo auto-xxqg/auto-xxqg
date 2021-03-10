@@ -85,6 +85,7 @@ function getDayofWeek() {
                     break;
             }
   console.log("今天是"+day)
+            return numOfWeek
            }
 
 /*
