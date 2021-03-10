@@ -709,9 +709,8 @@ function main() {
       if (myScores['每日答题'] != 5) {
         dailyQuestion(); //每日答题
         }   
-      if (myScores['每周答题'] != 5) {
-        if （week == 3）{
-        weeklyQuestion(); //每周答题 }
+      if (myScores['每周答题'] != 5 && week == 3) {
+           weeklyQuestion(); //每周答题 
         }        
       if (myScores['专项答题'] != 10) {
         specialQuestion();//专项答题
