@@ -24,8 +24,6 @@ var aTime = 30;//每篇文章学习-30秒 30*12≈360秒=6分钟
 var vTime = 60;//每个小视频学习60秒
 var rTime = 360;//音视频时长-6分钟
 
-var date = new Date();
-var week = date.getDay();
 
 var dyNum = 2;//订阅 2
 var commentText = ["支持党，支持国家！", "为实现中华民族伟大复兴而不懈奋斗！", "不忘初心，牢记使命"];//评论内容，可自行修改，大于5个字便计分
@@ -57,6 +55,37 @@ var DuYinTi = "选择正确的读音。";//读音题 20201211
 var ErShiSiShi ="下列不属于二十四史的是。";//二十四史
 
 var customize_flag = false;//自定义运行标志
+
+
+function getDayofWeek() {
+            var day = "";
+            var time = new Date();
+            var numOfWeek = time.getDay();
+            switch (numOfWeek) {
+                case 0:
+                    day = "星期日";
+                    break;
+                case 1:
+                    day="星期一";
+                    break;
+                case 2:
+                    day = "星期二";
+                    break;
+                case 3:
+                    day = "星期三";
+                    break;
+                case 4:
+                    day = "星期四";
+                    break;
+                case 5:
+                    day = "星期五";
+                    break;
+                case 6:
+                    day = "星期六";
+                    break;
+            }
+  console.log("今天是"+day)
+           }
 
 /*
 <---------------UI部分开始--------------->
@@ -693,6 +722,7 @@ function main() {
         videoStudy_news();//看视频              
     }else {
      getScores();//获取积分
+     getDayofWeek();//获取星期
      while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 4 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['每周答题'] != 5 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
        if (myScores['本地频道'] != 1) {
         localChannel1();//本地频道
@@ -709,7 +739,7 @@ function main() {
       if (myScores['每日答题'] != 5) {
         dailyQuestion(); //每日答题
         }   
-      if (myScores['每周答题'] != 5 && week == 3) {
+      if (myScores['每周答题'] != 5 && numOfWeek == 3) {
            weeklyQuestion(); //每周答题 
         }        
       if (myScores['专项答题'] != 10) {
