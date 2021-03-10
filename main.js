@@ -97,6 +97,7 @@ ui.layout(
                         <button id="dwzdate" w="*" text="选读文章(基于日期)" style="Widget.AppCompat.Button.Colored" />
                         <button id="dwzbobao" w="*" text="选读文章(基于播报)" style="Widget.AppCompat.Button.Colored" />
                         <button id="zx" w="*" text="函数名执行" style="Widget.AppCompat.Button.Colored" />
+                        <button id="hqfs" w="*" text="获取分数" style="Widget.AppCompat.Button.Colored" />
                         <button text="-------公告-------" style="Widget.AppCompat.Button.Borderless.Colored" w="*"/>
                         <button text="此应用仅适用于Android7.0以上！" style="Widget.AppCompat.Button.Borderless.Colored" w="auto"/>
                         <button w="250" w="*" id="about" text="使用说明" style="Widget.AppCompat.Button.Colored" />
@@ -394,6 +395,24 @@ ui.dwzbobao.click(function () {//挑战答题
     });
 });
 
+ui.hqfs.click(function () {//挑战答题
+     auto.waitFor();//等待获取无障碍辅助权限
+    if (thread != null && thread.isAlive()) {
+        alert("注意", "脚本正在运行，请结束之前进程");
+        return;
+    }
+    thread = threads.start(function () {
+        start_app();
+        articleStudy2();
+        getScores();
+        sleep(6000);
+         threads.shutDownAll();
+         console.hide();
+         engines.stopAll();
+         exit();
+    });
+});
+
 ui.dq.click(function () {//每日答题
      auto.waitFor();//等待获取无障碍辅助权限
     if (thread != null && thread.isAlive()) {
@@ -420,7 +439,7 @@ ui.sr.click(function () {//双人对战
         start_app();
         zCount = parseInt(ui.zCount.getText());
         SRQuestion();
-        threads.shutDownAll();
+s        threads.shutDownAll();
         console.hide();
         engines.stopAll();
         exit();
