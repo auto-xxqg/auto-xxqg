@@ -659,6 +659,8 @@ function main() {
          localChannel1();//本地频道
          zsyQuestion();//争上游答题
          SRQuestion();//双人对战
+        weeklyQuestion();//每周答题
+        specialQuestion();//转向答题
         challengeQuestion();//挑战答题
         dailyQuestion();//每日答题
         if (aZX == 1){
