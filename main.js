@@ -723,7 +723,7 @@ function main() {
         videoStudy_news();//看视频              
     }else {
      getScores();//获取积分
-     getDayofWeek();//获取星期
+    
      while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 4 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['每周答题'] != 5 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
        if (myScores['本地频道'] != 1) {
         localChannel1();//本地频道
@@ -740,7 +740,7 @@ function main() {
       if (myScores['每日答题'] != 5) {
         dailyQuestion(); //每日答题
         }   
-      if (myScores['每周答题'] != 5 && numOfWeek == 3) {
+      if (myScores['每周答题'] != 5 &&  getDayofWeek() == 3) {
            weeklyQuestion(); //每周答题 
         }        
       if (myScores['专项答题'] != 10) {
