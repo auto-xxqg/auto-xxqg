@@ -428,7 +428,7 @@ ui.dwzbobao.click(function () {//挑战答题
     });
 });
 
-ui.dy.click(function () {//挑战答题
+ui.dy.click(function () {//订阅
      auto.waitFor();//等待获取无障碍辅助权限
     if (thread != null && thread.isAlive()) {
         alert("注意", "脚本正在运行，请结束之前进程");
@@ -437,7 +437,7 @@ ui.dy.click(function () {//挑战答题
     thread = threads.start(function () {
         start_app();
         articleStudy2();
-        sub2()；
+        sub2();
         sleep(6);
          threads.shutDownAll();
          console.hide();
