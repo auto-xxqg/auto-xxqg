@@ -24,6 +24,9 @@ var aTime = 30;//每篇文章学习-30秒 30*12≈360秒=6分钟
 var vTime = 60;//每个小视频学习60秒
 var rTime = 360;//音视频时长-6分钟
 
+var date = new Date();
+var week = date.getDay();
+
 var dyNum = 2;//订阅 2
 var commentText = ["支持党，支持国家！", "为实现中华民族伟大复兴而不懈奋斗！", "不忘初心，牢记使命"];//评论内容，可自行修改，大于5个字便计分
 var num = random(0, commentText.length - 1) ;//随机数    
