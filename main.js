@@ -675,9 +675,9 @@ function main() {
        if (myScores['本地频道'] != 1) {
         localChannel1();//本地频道
         }
-       //if (myScores["争上游答题"] < 4) {
+       if (myScores["四人赛"] < 4) {
         zsyQuestion();//争上游答题
-        //}
+        }
        if (myScores["双人对战"] < 1) {
         SRQuestion();//双人对战
         } 
