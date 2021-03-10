@@ -707,7 +707,7 @@ function main() {
         dailyQuestion(); //每日答题
         }   
       if (myScores['每周答题'] != 5) {
-        if （time.getDay() = 3）{
+        if （time.getDay() == 3）{
         weeklyQuestion(); //每周答题 }
         }        
       if (myScores['专项答题'] != 10) {
