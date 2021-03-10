@@ -1636,7 +1636,7 @@ function sub1() {
     click("强国号", 0)
     let sublist = className("ListView").findOnce(0);
     var i = 0;
-    asub == 3;
+    var asub == 3;
     while (i < asub) {
         let object = desc("订阅").find();
         if (!object.empty()) {
