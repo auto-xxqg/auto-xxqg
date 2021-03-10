@@ -2464,7 +2464,7 @@ function challengeQuestionLoop(conNum) {
       question = question + options[0]; //字形题 读音题 在题目后面添加第一选项               
                 }
     console.log((conNum + 1).toString() + "搜库题目：" + question);
-    var answer = getAnswer(question, 'tiku');
+    var answer = getAnswer_online(question);
     if (answer.length == 0) {//tiku表中没有则到tikuNet表中搜索答案
         answer = getAnswer(question, 'tikuNet');
     }
@@ -2581,6 +2581,13 @@ function getAnswer(question, table_name) {
         return '';
     }
 }
+
+function getAnswer_online(question) {
+
+    var a = http.post("http://xzy.free.idcfengye.com/getAnswerByQuestion?question="+question);
+    return a;
+}
+
 
 /**
  * @description: 增加或更新数据库
