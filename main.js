@@ -436,7 +436,6 @@ ui.dy.click(function () {//订阅
     }
     thread = threads.start(function () {
         start_app();
-        articleStudy2();
         sub2();
         sleep(6);
          threads.shutDownAll();
