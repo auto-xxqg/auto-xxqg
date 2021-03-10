@@ -439,7 +439,7 @@ ui.sr.click(function () {//双人对战
         start_app();
         zCount = parseInt(ui.zCount.getText());
         SRQuestion();
-s        threads.shutDownAll();
+        threads.shutDownAll();
         console.hide();
         engines.stopAll();
         exit();
