@@ -723,15 +723,20 @@ function main() {
     }else {
      getScores();//获取积分
     
-     while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 4 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['每周答题'] != 5 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
+     while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 2 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
        if (myScores['本地频道'] != 1) {
         localChannel1();//本地频道
+        var i = 1; 
         }
-       if (myScores["四人赛"] < 4) {
-        zsyQuestion();//争上游答题
+       if (myScores["四人赛"] < 2) {
+        if ( i <= 2)
+         {zsyQuestion();//争上游答题
+          }
         }
        if (myScores["双人对战"] < 1) {
-        SRQuestion();//双人对战
+                   if ( i <= 2)
+                   {SRQuestion();//双人对战
+                   }
         } 
       if (myScores['挑战答题'] != 6) {
         challengeQuestion();//挑战答题
@@ -758,6 +763,7 @@ function main() {
       if (myScores['视听学习'] != 6){
         videoStudy_news();//看视频
       }
+       i++;
      getScores();//再次获取积分，核对文章和视听时长，补学
      continue;//break结束当前循环，continue继续执行当前循环
        }
