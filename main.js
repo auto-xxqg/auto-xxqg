@@ -669,15 +669,22 @@ function main() {
         videoStudy_news();//看视频              
     }else {
      getScores();//获取积分
-     while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 4 || myScores['本地频道'] != 1 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
+     while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 2 || myScores['本地频道'] != 1 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
        if (myScores['本地频道'] != 1) {
+        var i = 1;
+        var k = i;
         localChannel1();//本地频道
         }
        //if (myScores["争上游答题"] < 4) {
-        zsyQuestion();//争上游答题
+        while ( i <= 2){
+         zsyQuestion();//争上游答题
+         i++ }
         //}
+         i = k;
        if (myScores["双人对战"] < 1) {
-        SRQuestion();//双人对战
+         while ( i <= 2){
+               SRQuestion();//双人对战
+         i++}
         } 
       if (myScores['挑战答题'] != 6) {
         challengeQuestion();//挑战答题
