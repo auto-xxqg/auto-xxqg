@@ -1244,11 +1244,23 @@ function videoStudy_news() {
     id("home_bottom_tab_button_work").findOne().click();//点击主页正下方的"学习"按钮
     delay(2);
     click("电视台");
+    num = random(0, commentText.length - 1);重新随机数
     var vCatlog = vCat[num] ; //视频学习类别，随机取 "第一频道"、"学习视频"、"联播频道"
     if (num == 0){
              var s = "中央广播电视总台";
              }else if (num == 1){
-             var s = "央视新闻";
+                 var s1 = random(0,2);
+                 switch (s1){
+                    case 0:
+                    var s = "央视新闻";
+                    break;
+                    case 1:
+                    var s = "新华社";
+                    break;
+                    case 2:
+                    var s = "央广网";
+                    break;    
+                 }
              }else {
              var s = "中央广播电视总台";
              }
