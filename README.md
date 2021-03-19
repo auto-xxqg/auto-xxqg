@@ -6,6 +6,9 @@ auto-xxqg
 
 # 公告
 
+# 不知名的bug：
+#### 有时候会遇到很奇怪的bug，比如明明开启了无障碍却死活提示没有。这时候请您重启设备再试一次，实在不行就提交issues
+
 ## 更新周期：
 #### 没有特殊情况的话，我一个月会发布一个更新，有时候快的时候1周一个。v2.5.0及以上的版本会自动检测更新。
 
@@ -25,5 +28,6 @@ auto-xxqg
 # 特别鸣谢：
 #### 感谢85524365指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/6
 #### 感谢blank-psy指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/3
+#### 感谢UnaAtadura-Eris指出的问题，详见：https://github.com/Gingmzmzx/auto-xxqg/issues/19
 #### 感谢 晴天、翻滚的茄子 对我的支持
 #### 感谢所有资助我的朋友们，您们的资助是我前进的动力
