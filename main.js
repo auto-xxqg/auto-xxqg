@@ -758,7 +758,6 @@ function main() {
       if (myScores['视听学习'] != 6){
         videoStudy_news();//看视频
       }
-       i++;
      getScores();//再次获取积分，核对文章和视听时长，补学
      continue;//break结束当前循环，continue继续执行当前循环
        }
