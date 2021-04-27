@@ -723,21 +723,16 @@ function main() {
     }else {
      getScores();//获取积分
     
-     while ( myScores["双人对战"] < 1 || myScores["争上游答题"] < 2 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
+     while ( myScores["双人对战"] < 1 || myScores["四人赛"] < 2 || myScores['本地频道'] != 1 || myScores['专项答题'] !=10 || myScores['挑战答题'] != 6 || myScores['每日答题'] != 5 || myScores['视听学习'] != 6 || myScores['我要选读文章'] != 12 /*|| myScores['分享'] != 1 || myScores['发表观点'] != 1*/){
        if (myScores['本地频道'] != 1) {
         localChannel1();//本地频道
-        var i = 1; 
         }
        if (myScores["四人赛"] < 2) {
-        if ( i <= 2)
-         {zsyQuestion();//争上游答题
-          }
+         zsyQuestion();//争上游答题
         }
        if (myScores["双人对战"] < 1) {
-                   if ( i <= 2)
-                   {SRQuestion();//双人对战
-                   }
-        } 
+                   SRQuestion();//双人对战
+                           } 
       if (myScores['挑战答题'] != 6) {
         challengeQuestion();//挑战答题
         }
@@ -848,8 +843,8 @@ function delay(seconds) {
  * @return: null
  */
 function getScores() {
-    while (!id("home_bottom_tab_button_work").exists());//等待加载出主页
-    id("home_bottom_tab_button_work").findOne().click();//点击主页正下方的"学习"按钮
+    while (!id("home_bottom_tab_icon_large").exists());//等待加载出主页
+    id("home_bottom_tab_icon_large").findOne().click();//点击主页正下方的"学习"按钮
     delay(2);
     console.log("正在获取积分...");
     while (!text("积分明细").exists()) {//自主页点击右上角积分数字进入学习积分
@@ -1519,7 +1514,7 @@ function stopRadio() {
     console.log("广播已停止播放...");
     delay(1);
     if (!id("home_bottom_tab_button_work").exists()) {
-        start_app(1);
+        main_app(1);
     }
     delay(1);
 }
