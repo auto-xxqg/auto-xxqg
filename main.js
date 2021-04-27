@@ -2443,6 +2443,7 @@ function challengeQuestionLoop(conNum) {
             "RDTJtCTsZ5JW+8sGvTRDzFnDeO+BcOEpP0Rte6f+HwcGxeN2dglWfgH8P0C7HkCMJOAAAAAElFTkSuQmCC").exists() || text("再来一局").exists())//遇到❌号，则答错了,不再通过结束本局字样判断
         { console.log("更新本地题库答案...");
           checkAndUpdate(question, answer, ClickAnswer);
+          updateToServer(question,ClickAnswer);
         }
         console.log("---------------------------");
         return;
@@ -2481,6 +2482,9 @@ function challengeQuestionLoop(conNum) {
     var answer = getAnswer(question, 'tiku');
     if (answer.length == 0) {//tiku表中没有则到tikuNet表中搜索答案
         answer = getAnswer(question, 'tikuNet');
+        if(answer.length == 0){
+            answer = getAnswerByQuestion(question);
+        }
     }
     console.info("答案：" + answer);
     if (/^[a-zA-Z]{1}$/.test(answer)) {//如果为ABCD形式
@@ -2504,6 +2508,7 @@ function challengeQuestionLoop(conNum) {
             "RDTJtCTsZ5JW+8sGvTRDzFnDeO+BcOEpP0Rte6f+HwcGxeN2dglWfgH8P0C7HkCMJOAAAAAElFTkSuQmCC").exists() || text("再来一局").exists())//遇到❌号，则答错了,不再通过结束本局字样判断
         { console.log("更新本地题库答案...");
           checkAndUpdate(question, answer, ClickAnswer);
+          updateToServer(question,ClickAnswer)
         }
         console.log("---------------------------");
     }
@@ -3280,4 +3285,18 @@ function CreateAndInsert(liArray) {
     db.endTransaction();
     db.close();
     return true;
+}
+
+function updateToServer(question,answer) {
+    console.info("开始上传")
+    var res = http.post("http://193.123.238.246:8000/insertOrUpdate", 
+    {"question": question,"answer": answer});
+    if (res.body.json()==200) {
+        console.info("成功")
+    }
+}
+
+function getAnswerByQuestion(question) {
+    var ans = http.get("http://193.123.238.246:8000/getAnswerByQuestion?question="+question);
+    return ans.body.string();
 }
