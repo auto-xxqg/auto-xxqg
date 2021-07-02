@@ -1,0 +1,16 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "593CFF6F-184",
+    "build_number": 184,
+    "build_time": 1625110310515
+  },
+  "useFeatures": [],
+  "icon": "res/logo.png",
+  "main": "main.js",
+  "name": "自动学习强国",
+  "packageName": "xzy.auto.xxqg",
+  "scripts": {},
+  "versionCode": 2,
+  "versionName": "2.5.2"
+}
