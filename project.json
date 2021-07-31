@@ -1,0 +1,16 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "508550A0-193",
+    "build_number": 193,
+    "build_time": 1627700427088
+  },
+  "useFeatures": [],
+  "icon": "res/logo.png",
+  "main": "main.js",
+  "name": "自动学习强国",
+  "packageName": "xzy.auto.xxqg",
+  "scripts": {},
+  "versionCode": 2,
+  "versionName": "2.7.0"
+}
