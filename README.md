@@ -5,7 +5,8 @@ auto-xxqg
 ## 当前最新版为v2.7.0
 
 # 交流群
-### QQ群，群号：674264401
+### QQ群（只讨论技术，不发文件），群号：674264401
+### 电报群（发文件）， https://t.me/joinchat/SLU48oUkykwyMDJl
 
 # 在线题库
 ### 之前我用过一段时间的wanghuisenior大神写的在线题库，但存在一个缺陷，就没有继续用下去，现在我魔改了他的在线题库，已经上线：http://tiku.xzy.center/datalist 欢迎积极支持，添加更多题目！
