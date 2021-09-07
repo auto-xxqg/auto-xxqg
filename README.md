@@ -6,7 +6,7 @@ auto-xxqg
 
 # 重要通知
 ## 自动学习强国即将与好好学习Pro版合并，且合并后的程序不会开源
-## 具体详见 reason.md
+## 具体详见 [跳转至reason.md](./reason.md)
 
 # 交流群：
 ### 电报群， https://t.me/joinchat/SLU48oUkykwyMDJl
