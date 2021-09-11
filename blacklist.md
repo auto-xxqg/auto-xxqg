@@ -8,6 +8,6 @@
 ## 盗版软件交流群：
 1、（telegram）https://t.me/fuckxuexi  
 2、（微信公众号）二次元科技姬  
-#### to be continueed 土逼啃铁牛
+#### to be continued 土逼啃铁牛
 
 # 再次说明，上面的都是盗版，不要信以为真，也不要去加盗版群
