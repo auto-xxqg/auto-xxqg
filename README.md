@@ -6,6 +6,7 @@ auto-xxqg
 
 # 重要通知
 ## 即日起，自动学习强国与好好学习Pro版合并，且合并后的程序不会开源。
+## 官方下载地点： https://xzy.center/web/xxqg/ ，同时，更详细的说明也在那里。
 ## 具体详见 [跳转至reason.md](./reason.md)
 
 # 官方交流群：
