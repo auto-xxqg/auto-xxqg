@@ -15,8 +15,8 @@ autoStudyPro
 ## 其它：
 1、看过我在码云的很旧的那个项目的都知道我是个学生党，所以在开学后可能会无暇顾及这个项目，我的开发时间主要集中在晚上，版本更新的频率和速度会相对减慢  
 2、拒绝"大神""老大"等类的称呼，我真的很菜，我连LeetCode第一题都要看题解，所以求求您们别再这样称呼我！  
-3、官方网站： https://cfdown.site 强国题库：https://tiku.xzy.center 请自觉维护良好的题库环境！！！  
-4、之前我用过一段时间的wanghuisenior大神写的在线题库，但存在一个缺陷，就没有继续用下去，现在我魔改了他的在线题库，已经上线：http://tiku.xzy.center/datalist 欢迎积极支持，添加更多题目！GitHub开源地址： http://github.com/auto-xxqg/xxqg_tiku_online  
+3、官方网站： https://786345.xyz 强国题库：https://tiku.786345.xyz 请自觉维护良好的题库环境！！！  
+4、之前我用过一段时间的wanghuisenior大神写的在线题库，但存在一个缺陷，就没有继续用下去，现在我魔改了他的在线题库，已经上线：http://tiku.786345.xyz 欢迎积极支持，添加更多题目！GitHub开源地址： http://github.com/auto-xxqg/xxqg_tiku_online  
 5、有时候会遇到很奇怪的bug，比如明明开启了无障碍却死活提示没有。这时候请您重启设备再试一次，实在不行就提交issues  
 6、现在的仓库转移到了组织里，有意向加入本组织，能为组织做出贡献的，欢迎联系我加入！
 
