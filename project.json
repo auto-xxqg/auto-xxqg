@@ -1,0 +1,35 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "908A0D83-235",
+    "build_number": 235,
+    "build_time": 1645107897206,
+    "release": false
+  },
+  "encryptLevel": 3,
+  "useFeatures": [],
+  "icon": "icons/logo_icon.png",
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": true,
+    "splashIcon": "icons/splash_icon.png",
+    "splashText": "autoStudyPro NP!  |  这是特供版！",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "自动学习Pro",
+  "optimization": {
+    "removeAccessibilityService": false,
+    "removeOpenCv": false,
+    "unusedResources": false
+  },
+  "packageName": "auto.study.pro.especially",
+  "permissionConfig": {
+    "requestListOnStartup": [
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.2.3"
+}
