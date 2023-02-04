@@ -9,7 +9,7 @@ autoStudyPro
 - 我们的官网： [https://3141314.xyz](https://3141314.xyz)（已寄了）
 
 # 官方交流群：
-- 电报群， https://t.me/auto_xxqg （群内douzi大佬还有可用的辅助）
+- 电报群， https://t.me/auto_xxqg （群内大佬还有可用的辅助）
 
 # 特别鸣谢：
 感谢 晴天、翻滚的茄子、W_DouZi、校雷锋、立马振山河、安然、Qrui等 对我的支持（排名不分先后）  
